@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Show Data</title>
+    </head>
+
+    <body>
+
+        <h1>Show Data</h1>
+
+        <form>
+
+            <input type="text" id="firstname" placeholder="First Name" />
+            <input type="text" id="middlename" placeholder="Middle Name" />
+            <input type="text" id="lastname" placeholder="Last Name" />
+            <button onclick="showValues()">Submit</button>
+
+        </form>
+
+        <script>
+
+            function showValues() {
+                var firstname = document.getElementById("firstname").value;
+                var middlename = document.getElementById("middlename").value;
+                var lastname = document.getElementById("lastname").value;
+                var output = " The First Name Is " + firstname + " ,The Middle Name Is " + middlename + " ,The Last Name Is " + lastname;
+                alert(output);
+            }
+
+        </script>
+        
+    </body>
+
+</html>

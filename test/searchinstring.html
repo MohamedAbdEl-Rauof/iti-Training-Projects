@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Letter Locations</title>
+</head>
+<body>
+<h1>Find Letter Locations</h1>
+<input type="text" id="sentence" placeholder="Enter a sentence">
+<input type="text" id="letter" placeholder="Enter a letter">
+<button onclick="findLetterLocations()">Find Letter Locations</button>
+<p id="output"></p>
+<script>
+function findLetterLocations() {
+  var sentence = document.getElementById("sentence").value;
+  var letter = document.getElementById("letter").value;
+  var locations = [];
+  for (var i = 0; i < sentence.length; i++) {
+    if (sentence[i] == letter) {
+      locations.push(i);
+    }
+  }
+  var output = locations.join(", ");
+  document.getElementById("output").innerHTML = output;
+}
+</script>
+</body>
+</html>

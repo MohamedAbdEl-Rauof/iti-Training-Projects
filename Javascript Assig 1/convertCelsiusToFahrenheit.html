@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Temperature Converter</title>
+
+        <style>
+            body{
+                text-align: center;
+                padding-top: 200px;
+                font-family: sans-serif;
+                font-size: 30px;   
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Temperature Converter</h1>
+
+            <p>Enter a temperature in Celsius or Fahrenheit to convert it to the other scale</p>
+            <input type="text" id="temperature" placeholder="Temperature">
+
+            <select id="scale">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <button onclick="convert()">Convert</button>
+            <p id="result"></p>
+        </div>
+
+        <script>
+            function convert(){
+                var temperature = document.getElementById("temperature").value;
+                var scale = document.getElementById("scale").value;
+                var result;
+
+                if(scale==="celsius"){
+                    result = (temperature * 9/5)+32;
+                }else{
+                    result = (temperature-32)*5/9;
+                }
+                document.getElementById("result").innerHTML = temperature + "°" + scale + " is " + result + "°" + (scale === "celsius" ? "Fahrenheit" : "Celsius");
+            }
+        </script>
+    </body>
+</html>

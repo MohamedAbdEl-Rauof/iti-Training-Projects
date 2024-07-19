@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grade Calculator</title>
+
+        <style>
+            body{
+                text-align: center;
+                padding-top: 200px;
+                font-family: sans-serif;
+                font-size: 30px;
+                
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Grade Calculator</h1>
+
+            <p>Enter your score to calculate your grade</p>
+            <input type="text" id="score" placeholder="Score">
+
+            <button onclick="calculateGrade()">Calculate</button>
+            <p id="grade"></p>
+        </div>
+
+        <script>
+            function calculateGrade(){
+                var score = document.getElementById("score").value;
+                var grade;
+
+                if(score >= 90 && score <= 100){
+                    grade = "A+";
+                }else if (score >= 80 && score <= 90){
+                    grade = "B+"
+                }else if(score >= 50 && score <= 80){
+                    grade = "C";
+                }else{
+                    grade = "Your Failed"
+                }
+
+                document.getElementById("grade").innerHTML = grade;
+                
+            }
+        </script>
+    </body>
+</html>

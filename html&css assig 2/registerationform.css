@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top left, #9853a1, #2fbee1); /* Pink to light brown gradient */
+}
+  
+.container {
+    background-color: white; /* Pink color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjust the width as needed */
+    max-width: 5000px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+  
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="cpassword"],
+input[type="date"],
+select[name="course"]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+img{
+    width: 90px;
+    padding-left: 50px;
+}
+
+.container .choosefile{
+padding-left: 100px;
+}
+
+    

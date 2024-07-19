@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/registerationform.css">
+    <title>Document</title><div class=""></div>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to top left, #9853a1, #2fbee1); /* Pink to light brown gradient */
+        }
+          
+        .container {
+            background-color: white; /* Pink color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%; /* Adjust the width as needed */
+            max-width: 5000px;
+            margin: 0 auto; /* Center the container horizontally */
+        }
+          
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        input[type="cpassword"],
+        input[type="date"],
+        select[name="course"]{
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        img{
+            width: 90px;
+            padding-left: 50px;
+        }
+        
+        .container .choosefile{
+        padding-left: 100px;
+        }
+        
+            
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <hr>
+
+        <label for="fname">First Name : </label><br> <br>
+        <input type="text" name="first_name" id="fname" placeholder="First Name" >
+        <br>
+
+        <label for="lname">Last Name : </label><br> <br>
+        <input type="text" name="last_name" id="lname" placeholder="Last Name">
+        <br>
+
+        <label for="uname">User Name : </label><br> <br>
+        <input type="text" name="user_name" id="uname" placeholder="User Name">
+        <br>
+
+        <label for="password">Password : </label><br> <br>
+        <input type="Password" name="password" id="Password" placeholder="Password">
+        <br>
+
+        <label for="cpassword">Confirm <br>Password : </label><br> <br>
+        <input type="password" name="Confirm_Password " id="cpassword" placeholder="Confirm Password">
+        <br>
+
+        <label for="email">Email : </label><br> <br>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br>
+
+        <label for="mobil">Mobil : </label><br> <br>
+        <input type="number" name="Mobil" id="mobil" placeholder="Mobil">
+        <br>  
+
+        <label for="gender">Gender :</label><br> <br>
+        <input type="radio" id="male" name="gender" value="male" > Male
+        <input type="radio" id="female" name="gender" value="female" > Female
+        <br><br>
+
+        <label for="dob">DOB: </label><br> <br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="course">Course:</label><br> <br>
+        <select name="course" id="course">
+            <option value="select course">select course</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+        </select>      
+        <br><br>
+
+        <label for="nationality">Nationality:</label><br> <br>
+        <input type="checkbox" id="indian" name="indian" value="indian"> Indian
+        <input type="checkbox" id="other" name="other" value="other"> Other
+        <br><br>
+
+        <label for="profile">Profile:</label>
+        <img src="/image/download.png" />
+        <br>
+
+        <div class="choosefile">
+            <button type="button">Choose File</button> No File chosen
+        </div>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+body{
+    background-color: rgba(0, 0, 0, 0.214);
+}
+
+.main{
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+}
+
+.main img{
+margin: 30px;
+width: 200px;
+padding-left: 30px;
+}
+
+.main h1{
+    text-decoration: underline 8px;
+    text-underline-offset: 20px;
+    color: white;
+    padding-top: 30px;
+    letter-spacing: 10px;
+
+}
+
+.main .try p{
+    padding-top: 20PX;
+    padding-right: 60px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.exexperience-header{
+    background-color: rgba(0, 0, 0, 0.282);
+    color:rgba(0, 0, 0, 0.5);
+    padding-left: 30px;
+
+}
+
+.experience{
+    display: flex;
+   
+}
+
+.experience .job li{
+    font-weight: bold;
+    width: 200px;
+    font-size: 18px;
+
+}
+
+.experience .job p {
+    width: 200px;
+}
+
+.experience .name{
+    margin-left: 300px;
+   
+    
+}
+
+.education-header{
+    background-color: rgba(0, 0, 0, 0.282);
+    color:rgba(0, 0, 0, 0.5);
+    padding-left: 30px;
+
+}
+
+.education{
+    display: flex;
+   
+}
+
+.education .job li{
+    font-weight: bold;
+    width: 200px;
+    font-size: 18px;
+
+}
+
+.education .job p {
+    width: 200px;
+}
+
+.education .name{
+    margin-left: 300px;
+    
+}
+
+.continer{
+    display: flex;
+}
+
+.continer .contact {
+    flex-basis: 50%;
+}
+  
+.continer .sklis {
+    flex-basis: 50%;
+}
+
+.continer .contact h1 ,.continer .sklis h1{
+    padding-left: 30px;
+}
+
+.continer .contact h1 {
+    background-color: rgba(0, 0, 0, 0.282);
+    color:rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 50px;
+}
+  
+.continer .sklis h1 {
+    background-color: rgba(0, 0, 0, 0.282);
+    color:rgba(0, 0, 0, 0.5);
+    width: 490px;
+    height: 50px;
+}
+
+
+.sklis h5{
+    margin: 0;
+}
+
+
+
+  
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Welcome Message</title>
+
+    <style>
+
+      body{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 300px;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Welcome to My Website</h1>
+
+    <p id="welcomeMessage" </p>
+
+    <script>
+
+      var username = prompt("please enter your name : ");
+
+      if(username){
+        var welcomeMessage = "welcome " + username + " have fun on my website ";
+        document.getElementById("welcomeMessage").innerText = welcomeMessage;
+      }else{
+        document.write(" Error .. Refresh And Enter Your Name")
+      }
+
+    </script>
+
+  </body>
+</html>

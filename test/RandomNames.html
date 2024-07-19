@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Names</title>
+</head>
+<body>
+<h1>Random Names</h1>
+<input type="text" id="names" placeholder="Enter names separated by commas">
+<button onclick="getRandomNames()">Get Random Names</button>
+<p id="output"></p>
+<script>
+function getRandomNames() {
+  var names = document.getElementById("names").value;
+  var namesArray = names.split(",");
+  var random1 = Math.floor(Math.random() * namesArray.length);
+  var random2 = Math.floor(Math.random() * namesArray.length);
+  var output = namesArray[random1] + ", " + namesArray[random2];
+  document.getElementById("output").innerHTML = output;
+}
+
+</script>
+</body>
+</html>

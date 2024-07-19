@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation</title>
+    </head>
+
+    <body>
+        <h1>Form Validation</h1>
+
+        <form>
+
+            <input type="text" id="username" placeholder="Username" onfocus="this.style.borderColor='gray'" onblur="this.style.borderColor='red'" />
+            <input type="email" id="email" placeholder="Email" onfocus="this.style.borderColor='gray'" onblur="this.style.borderColor='red'" />
+            <input type="password" id="password" placeholder="Password" onfocus="this.style.borderColor='gray'" onblur="this.style.borderColor='red'" />
+            <button onclick="validateForm()">Submit</button>
+            
+        </form>
+
+        <script>
+
+            function validateForm() {
+                var username = document.getElementById("username").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                var errors = [];
+
+                if (username == "") 
+                {
+                    errors.push("Username cannot be empty");
+                }
+
+                if (email == "") 
+                {
+                    errors.push("Email cannot be empty");
+                }
+
+                if (password == "")
+                {
+                    errors.push("Password cannot be empty");
+                }
+
+                if (errors.length > 0) 
+                {
+                    alert("Enter All Data");
+                } else {
+                    alert("Form is valid");
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

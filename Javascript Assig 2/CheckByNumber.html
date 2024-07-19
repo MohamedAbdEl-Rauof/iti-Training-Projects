@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Check By Number</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Check By Number</h1>
+
+        <p>Enter a number: <input type="number" id="inputNumber"></p>
+        <button onclick="checkFizzBuzz()">Check</button>
+
+        <p id="result"></p>
+
+        <script>
+            
+            function checkFizzBuzz() {
+
+
+                var number = parseInt(document.getElementById("inputNumber").value);
+        
+                if (number % 3 == 0 && number % 5 == 0) {
+                resultText = "Fizz Buzz";
+                } else if (number % 3 == 0) {
+                resultText = "Fizz";
+                } else if (number % 5 == 0) {
+                resultText = "Buzz";
+                } else {
+                resultText = "None";
+                }
+        
+                document.getElementById("result").innerText = resultText;
+            }
+        
+        </script>
+    </body>
+</html>
